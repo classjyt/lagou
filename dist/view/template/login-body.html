@@ -1,0 +1,11 @@
+<div class="login_body">
+	<button ui-sref="login" ng-show="noLogin">去登陆</button>
+	<!-- 登陆成功后显示 -->
+	<div ng-show="haveLogin">
+		<img src="../../images/head.JPG" alt="">
+		<h5>刘小鹏</h5>
+		<span class="vote" ui-sref="vote">投递</span>
+		<span class="get" ui-sref="collect">收藏</span>
+		<button ng-click="exitLogin()">退出登录</button>
+	</div>
+</div>

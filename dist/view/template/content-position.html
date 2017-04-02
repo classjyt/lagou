@@ -1,0 +1,24 @@
+<div class="content_position">
+    <!-- 职位分类 -->
+    <div class="choose">
+        <h3>职位分类</h3>
+        <button ng-bind="result.positionClass[0].name" class="sele" ng-click="change1()" ng-style="btn1"></button>
+        <button ng-bind="result.positionClass[1].name" ng-click="change2()" ng-style="btn2"></button>
+    </div>
+    <!-- 前端工程师 -->
+    <div class="web" ng-hide="flag1">
+        <ul>
+            <li ng-bind="result.positionClass[0].positionList[0].name"></li>
+            <li ng-bind="result.positionClass[0].positionList[0].createdDate"></li>
+        </ul>
+        <span ng-bind="result.positionClass[0].positionList[0].salary"></span>
+    </div>
+    <!-- 运营总监 -->
+    <div class="web" ng-hide="flag2">
+        <ul>
+            <li ng-bind="result.positionClass[1].positionList[0].name"></li>
+            <li ng-bind="result.positionClass[1].positionList[0].createdDate"></li>
+        </ul>
+        <span ng-bind="result.positionClass[1].positionList[0].salary"></span>
+    </div>
+</div>

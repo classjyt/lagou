@@ -1,0 +1,15 @@
+<div class="login">
+	<form action="">
+			<p>
+			<span><i class="icon iconfont icon-my"></i></span>
+			<input type="text" name="" id="" placeholder="请输入手机号" ng-model="loginPhone">
+			</p>
+			<p>
+			<span><i class="icon iconfont icon-pwd"></i></span>
+			<input type="password" name="" id="" placeholder="请输入密码" ng-model="loginPwd">
+			</p>
+			<h2 ng-show="check">😂手机号码或密码不正确❌</h2>
+		<button class="go" ng-click="loginCheck()">登录</button>
+		<button ui-sref="regist" class="regist">注册</button>
+	</form>
+</div>

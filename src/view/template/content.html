@@ -1,0 +1,39 @@
+<div class="content">
+    <ul ng-show="ulShow1">
+        <!-- <li ng-repeat="data in result" ui-sref="technique({id:data.id})"> -->
+        <li ng-repeat="data in result" ui-sref="technique({id:data.id})">
+            <img ng-src="{{data.imageUrl}}">
+            <div>
+                <p>{{data.companyName}}[{{data.cityName}}] {{data.industryName}} {{data.scaleName}}</p>
+                <p ng-bind="data.salaryName"></p>
+                <p ng-bind="data.date"></p>
+            </div>
+            <img src="../../images/star.png" alt="" ng-show="conShow" ng-mouseover="conClick()" id="starImg">
+            <img src="../../images/star-active.png" alt="" ng-show="conShow2" ng-mouseover="conClick2()" id="starImg">
+        </li>
+    </ul>
+    <!-- 默认隐藏 -->
+    <ul ng-show="ulShow2">
+        <!-- <li ng-repeat="data in result" ui-sref="technique({id:data.id})"> -->
+        <li ui-sref="technique({id:data.id})">
+            <img ng-src="{{result[0].imageUrl}}">
+            <div>
+                <p>{{result[0].companyName}}[{{result[0].cityName}}] {{result[0].industryName}} {{result[0].scaleName}}</p>
+                <p ng-bind="result[0].salaryName"></p>
+                <p ng-bind="result[0].date"></p>
+            </div>
+        </li>
+    </ul>
+    <!-- 默认隐藏 -->
+    <ul ng-show="ulShow3">
+        <!-- <li ng-repeat="data in result" ui-sref="technique({id:data.id})"> -->
+        <li ui-sref="technique({id:data.id})">
+            <img ng-src="{{result[1].imageUrl}}">
+            <div>
+                <p>{{result[1].companyName}}[{{result[1].cityName}}] {{result[1].industryName}} {{result[1].scaleName}}</p>
+                <p ng-bind="result[1].salaryName"></p>
+                <p ng-bind="result[1].date"></p>
+            </div>
+        </li>
+    </ul>
+</div>

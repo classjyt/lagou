@@ -1,0 +1,651 @@
+@whiteColor: white;
+@pageWidth: 100%;
+@height1: 0.82rem;
+@overflow: hidden;
+body {
+    background-color: #eeeeee;
+}
+
+//登录前-职位页
+
+/*顶部：未登录*/
+
+.header {
+    background-color: #12d5b5;
+    width: @pageWidth;
+    height: @height1;
+    color: @whiteColor;
+    line-height: 0.82rem;
+    overflow: @overflow;
+    // position: fixed;
+    // top: 0;
+    span {
+        font-size: 0.32rem;
+        float: left;
+        margin-left: 0.15rem;
+    }
+    button {
+        font-size: 0.25rem;
+        width: 1.2rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        float: right;
+        background-color: #feae11;
+        color: @whiteColor;
+        margin: 0.21rem 0.15rem;
+    }
+    #hello{
+        position: absolute;
+        right: 0.2rem;
+    }
+}
+
+
+/*主体内容*/
+
+.content {
+    width: @pageWidth;
+    height: auto;
+    ul {
+        background-color: white;
+        li {
+            width: @pageWidth;
+            height: auto;
+            border-bottom: 0.01rem solid #d4d4d4;
+            img {
+                width: 1.3rem;
+                height: 1.3rem;
+                margin-left: 0.3rem;
+                padding: 0.15rem 0 0.15rem 0;
+            }
+            img:nth-of-type(4){
+                margin-bottom: 0.5rem;
+            }
+            div {
+                display: inline-block;
+                margin-left: 0.15rem;
+                padding: 0.15rem 0 0.15rem 0;
+                font-size: 0.29rem;
+                p:nth-of-type(2) {
+                    color: red;
+                }
+                p:nth-of-type(1){
+                    width: 5.64rem;
+                }
+            }
+            #starImg{
+                width: 0.8rem;
+                height: 0.8rem;
+                position: absolute;
+                top: 1rem;
+                right: 0.3rem;
+            }
+        }
+    }
+}
+
+
+/*底部*/
+
+.footer {
+    width: @pageWidth;
+    height: @height1;
+    border-top: 0.01rem solid #d4d4d4;
+    line-height: 0.82rem;
+    overflow: @overflow;
+    position: fixed;
+    bottom: 0;
+    background-color: @whiteColor;
+    ul {
+        li {
+            float: left;
+            width: 2.5rem;
+            text-align: center;
+            .iconfont {
+                font-size: 0.42rem;
+            }
+            // &:hover {
+            //     background-color: #dbf9f4;
+            //     color: #01c5be;
+            // }
+        }
+    }
+}
+
+//登录前-职位详情
+
+/*顶部-职位详情*/
+
+.header_technique {
+    background-color: #12d5b5;
+    width: @pageWidth;
+    height: @height1;
+    color: @whiteColor;
+    line-height: 0.82rem;
+    overflow: @overflow;
+    text-align: center;
+    font-size: 0.3rem;
+    span:first-child {
+        float: left;
+        margin-left: 0.2rem;
+    }
+}
+
+
+/*主体内容-职位详情*/
+
+.content_technique {
+    width: @pageWidth;
+    height: auto;
+    .one {
+        background-color: @whiteColor;
+        border-bottom: 0.03rem solid #d4d4d4;
+        width: @pageWidth;
+        height: 3.4rem;
+        font-size: 0.3rem;
+        p {
+            margin: 0 0 0.44rem 0.2rem;
+            span {
+                margin-right: 0.6rem;
+            }
+        }
+        p:first-child {
+            padding-top: 0.6rem;
+            span:last-child {
+                color: red;
+            }
+        }
+        img{
+            position: absolute;
+            top: 2rem;
+            right: 1rem;
+        }
+    }
+    .three {
+        background-color: @whiteColor;
+        width: @pageWidth;
+        height: 2.1rem;
+        color: black;
+        h3 {
+            border-bottom: 0.03rem solid #d4d4d4;
+            width: @pageWidth;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            font-size: 0.3rem;
+            margin-left: 0.2rem;
+        }
+        pre {
+            margin-left: 0.2rem;
+            padding-top: 0.5rem;
+            font-size: 0.28rem;
+        }
+    }
+}
+
+.two {
+    background-color: @whiteColor;
+    width: @pageWidth;
+    height: 1.88rem;
+    margin-bottom: 0.2rem;
+    img {
+        width: 1.1rem;
+        height: 1.1rem;
+        margin-left: 0.4rem;
+        padding: 0.43rem 0 0.43rem 0;
+    }
+    div {
+        display: inline-block;
+        margin: 0 0 0.1rem 0.2rem;
+        p {
+            margin-bottom: 0.3rem;
+            font-size: 0.3rem;
+        }
+    }
+}
+
+
+/*底部-职位详情*/
+
+.footer_technique {
+    background-color: #12d5b5;
+    width: @pageWidth;
+    height: @height1;
+    // border-top: 0.01rem solid #d4d4d4;
+    line-height: 0.82rem;
+    // overflow: @overflow;
+    text-align: center;
+    font-size: 0.3rem;
+    color: @whiteColor;
+    position: fixed;
+    bottom: 0;
+}
+
+// 登录前-公司职位-技术
+.content_position {
+    width: @pageWidth;
+    height: auto;
+    .choose {
+        width: @pageWidth;
+        height: 2.2rem;
+        background-color: @whiteColor;
+        border-top: 0.03rem solid #d4d4d4;
+        border-bottom: 0.03rem solid #d4d4d4;
+        h3 {
+            font-size: 0.35rem;
+            margin: 0.25rem 0 0 0.2rem;
+            color: black;
+        }
+        button {
+            float: left;
+            width: 1.44rem;
+            height: 0.72rem;
+            border-radius: 0.5rem;
+            background-color: #def8f5;
+            margin: 0.6rem 0 0 0.2rem;
+            font-size: 0.25rem;
+        }
+    }
+    .web {
+        width: @pageWidth;
+        height: 1.96rem;
+        background-color: @whiteColor;
+        font-size: 0.3rem;
+        ul {
+            li {
+                margin-left: 0.2rem;
+            }
+            li:first-child {
+                padding: 0.3rem 0 0.2rem 0;
+            }
+        }
+        span {
+            color: red;
+            float: right;
+            margin: -0.75rem 0.3rem 0 0;
+        }
+    }
+}
+
+//搜索页面
+
+/*头部*/
+
+.head_search {
+    background-color: #12d5b5;
+    width: @pageWidth;
+    height: @height1;
+    color: @whiteColor;
+    line-height: 0.82rem;
+    span {
+        margin-left: 0.9rem;
+    }
+    input {
+        width: 3.88rem;
+        height: 0.5rem;
+        margin-left: 0.2rem;
+        background-color: #eeeeee;
+        border-radius: 0.4rem;
+    }
+    i {
+        margin-left: 0.2rem;
+        color: #9f9e9d;
+    }
+    input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        text-align: center;
+    }
+    input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        text-align: center;
+    }
+    input:-ms-input-placeholder {
+        /* Internet Explorer 10 */
+        text-align: center;
+    }
+    input::placeholder {
+        text-align: center;
+    }
+}
+
+.list_search {
+    width: @pageWidth;
+    height: @height1;
+    color: black;
+    font-size: 0.25rem;
+    text-align: center;
+    line-height: @height1;
+    ul {
+        li {
+            width: 2.5rem;
+            // height: @height1;
+            float: left;
+            border-bottom: 0.05rem solid #eeeeee;
+        }
+    }
+}
+
+
+/*阴影背景*/
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+/*搜索城市*/
+
+.common_list {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 200;
+    color: #1063e5;
+    font-size: 0.3rem;
+    ul {
+        li {
+            width: 7.16rem;
+            height: 1.04rem;
+            background-color: @whiteColor;
+            margin: 0 auto;
+            line-height: 1.04rem;
+            border-bottom: 0.03rem solid #eeeeee;
+        }
+        li:first-child {
+            border-top-left-radius: 0.1rem;
+            border-top-right-radius: 0.1rem;
+        }
+        li:last-child {
+            border-bottom-left-radius: 0.1rem;
+            border-bottom-right-radius: 0.1rem;
+        }
+    }
+    button {
+        font-size: 0.3rem;
+        background-color: @whiteColor;
+        width: 7.16rem;
+        height: 1.04rem;
+        line-height: 1.04rem;
+        margin: 0.2rem auto;
+        color: #1063e5;
+        border-radius: 0.1rem;
+    }
+}
+
+//去登录界面
+.login_body {
+    width: @pageWidth;
+    text-align: center;
+    button {
+        width: 95%;
+        height: 0.8rem;
+        background-color: #12d5b5;
+        text-align: center;
+        line-height: 0.8rem;
+        font-size: 0.35rem;
+        margin-top: 6rem;
+    }
+    div{
+        margin-top: 1.2rem;
+        img{
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 0.8rem;
+        }
+        h5{
+            margin: 0.66rem 0 0.88rem 0;
+            font-size: 0.35rem;
+        }
+        span{
+            display: inline-block;
+            width: 3.0rem;
+            height: 1.9rem;
+            background-color: #12d5b5;
+            line-height: 1.9rem;
+            font-size: 0.4rem;
+            color: @whiteColor;
+        }
+        .vote{
+            margin-right: 0.3rem;
+        }
+        .get{
+            margin-left: 0.3rem;
+        }
+        button{
+            background-color: red;
+            margin-top: 0.4rem;
+            color: @whiteColor;
+        }
+    }
+}
+
+//真正登录界面
+.login {
+    background: url(../images/background.png) no-repeat center;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    color: @whiteColor;
+    form {
+        margin-top: 5.2rem;
+        p {
+            display: inline-block;
+            span {
+                display: inline-block;
+                width: 1.08rem;
+                height: 0.8rem;
+                line-height: 0.8rem;
+                background-color: #908f90;
+                opacity: 0.8;
+                float: left;
+            }
+            input {
+                width: 4.8rem;
+                height: 0.8rem;
+                background-color: rgba(194,193,191,0.5);
+                font-size: 0.35rem;
+            }
+            input::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: @whiteColor;
+                text-align: center;
+            }
+            input:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: @whiteColor;
+                text-align: center;
+            }
+            input:-ms-input-placeholder {
+                /* Internet Explorer 10 */
+                color: @whiteColor;
+                text-align: center;
+            }
+            input::placeholder {
+                color: @whiteColor;
+                text-align: center;
+            }
+        }
+        p:first-child{
+            border-bottom:0.035rem solid @whiteColor;
+        }
+        h2{
+            color: red;
+            font-size: 0.3rem;
+            margin-top: 0.5rem;            
+        }
+        button {
+            width: 5.82rem;
+            height: 0.74rem;
+            background-color: #12d5b5;
+            font-size: 0.4rem;
+        }
+        .go{
+            margin: 1rem 0 0.44rem 0;
+            color:@whiteColor;
+        }
+        .regist{
+            border:0.03rem solid #12d5b5;
+            color: #12d5b5;
+            background-color: rgba(194,232,241,0.8);
+        }
+    }
+}
+
+// 注册页面
+.regist_real {
+    background: url(../images/background.png) no-repeat center;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    color: @whiteColor;
+    form {
+        margin-top: 1.12rem;
+        p {
+            display: inline-block;
+            span {
+                display: inline-block;
+                width: 1.08rem;
+                height: 0.8rem;
+                line-height: 0.8rem;
+                background-color: #908f90;
+                opacity: 0.8;
+                float: left;
+            }
+            input {
+                width: 4.8rem;
+                height: 0.8rem;
+                background-color: rgba(194,193,191,0.5);
+                font-size: 0.35rem;
+            }
+            #phoneCheck{
+                position: absolute;
+                z-index: 150;
+                top:1.12rem;
+                right:0.5rem;
+                background-color: rgba(0,0,0,0);
+            }
+            #pwdCheck{
+                position: absolute;
+                z-index: 150;
+                top:1.93rem;
+                right:0.5rem;
+                background-color: rgba(0,0,0,0);
+            }
+            input::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: @whiteColor;
+                text-align: center;
+            }
+            input:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: @whiteColor;
+                text-align: center;
+            }
+            input:-ms-input-placeholder {
+                /* Internet Explorer 10 */
+                color: @whiteColor;
+                text-align: center;
+            }
+            input::placeholder {
+                color: @whiteColor;
+                text-align: center;
+            }
+        }
+        p:first-child{
+            border-bottom:0.035rem solid @whiteColor;
+        }
+        div{
+            margin-top: 0.8rem;
+            input{
+                width: 3.8rem;
+                height: 0.8rem;
+                background-color: rgba(194,193,191,0.5);
+                font-size: 0.3rem;
+            }
+            input::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: @whiteColor;
+                text-align: center;
+            }
+            input:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: @whiteColor;
+                text-align: center;
+            }
+            input:-ms-input-placeholder {
+                /* Internet Explorer 10 */
+                color: @whiteColor;
+                text-align: center;
+            }
+            input::placeholder {
+                color: @whiteColor;
+                text-align: center;
+            }
+            button{
+                width: 1.6rem;
+                height: 0.8rem;
+                border:0.03rem solid #12d5b5;
+                font-size: 0.3rem;
+                background-color: rgba(0,0,0,0);
+                color: #12d5b5;
+                margin-left: 0.3rem;
+            }
+        }
+        button {
+            width: 5.82rem;
+            height: 0.74rem;
+            background-color: #12d5b5;
+            font-size: 0.4rem;
+        }
+        .go{
+            margin: 1rem 0 0.44rem 0;
+            color:@whiteColor;
+        }
+        .regist1{
+            border:0.03rem solid #12d5b5;
+            color: #12d5b5;
+            background-color: rgba(194,232,241,0.8);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

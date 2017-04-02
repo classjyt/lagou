@@ -1,0 +1,21 @@
+<div class="regist_real">
+	<form action="">
+			<p>
+			<span><i class="icon iconfont icon-my"></i></span>
+			<input type="text" name="" id="" placeholder="请输入手机号" ng-model="phoneNum" ng-blur="phoneCheck()" ng-focus="focusCheck1()">
+			<span id="phoneCheck" ng-show="check1">❌</span>
+			</p>
+			<p>
+			<span><i class="icon iconfont icon-my"></i></span>
+			<input type="password" name="" id="" placeholder="请设置6位以上的密码" ng-model="pwd" ng-blur="pwdCheck()" ng-focus="focusCheck2()">
+			<span id="pwdCheck" ng-show="check2">❌</span>
+			</p>
+			<!-- 短信验证 -->
+			<div>
+				<input type="text" name="" id="" placeholder="短信验证码" ng-model="code">
+				<button ng-click="sendCode()" id="sendMes">发送短信</button>
+			</div>
+		<button ui-sref="login" class="go">登录</button>
+		<button ui-sref="regist" class="regist1" ng-click="regist()">注册</button>
+	</form>
+</div>
