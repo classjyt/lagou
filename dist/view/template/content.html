@@ -8,8 +8,10 @@
                 <p ng-bind="data.salaryName"></p>
                 <p ng-bind="data.date"></p>
             </div>
-            <img src="../../images/star.png" alt="" ng-show="conShow" ng-mouseover="conClick()" id="starImg">
-            <img src="../../images/star-active.png" alt="" ng-show="conShow2" ng-mouseover="conClick2()" id="starImg">
+            <!-- <img src="../../images/star.png" alt="" ng-show="conShow" ng-mouseover="conClick()" id="starImg"> -->
+            <img ng-src="{{star1Img}}" alt="" ng-show="conShow" ng-mouseover="conClick()" id="starImg">
+            <!-- <img src="../../images/star-active.png" alt="" ng-show="conShow2" ng-mouseover="conClick2()" id="starImg"> -->
+            <img ng-src="{{star2Img}}" alt="" ng-show="conShow2" ng-mouseover="conClick2()" id="starImg">
         </li>
     </ul>
     <!-- 默认隐藏 -->

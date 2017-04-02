@@ -2,6 +2,8 @@
 
 // 后端交互  ajax 请求
 angular.module('app').controller('myCtrl', ['$scope','$http','$rootScope','$state', function($scope,$http,$rootScope,$state){
+
+	$scope.headImg=$rootScope.headImage;
 	$http({
 		method:'get',
 		url:'data/positionList.json',

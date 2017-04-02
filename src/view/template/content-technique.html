@@ -10,8 +10,10 @@
 			<span ng-bind="result.education"></span>
 		</p>
 		<p ng-bind="result.benefit"></p>
-		<img src="../../images/star.png" alt="" ng-show="techShow" ng-click="techClick()">
-		<img src="../../images/star-active.png" alt="" ng-show="techShow2" ng-click="techClick2()">
+		<!-- <img src="../../images/star.png" alt="" ng-show="techShow" ng-click="techClick()"> -->
+		<img ng-src="{{star1Img}}" alt="" ng-show="techShow" ng-click="techClick()">
+		<!-- <img src="../../images/star-active.png" alt="" ng-show="techShow2" ng-click="techClick2()"> -->
+		<img ng-src="{{star2Img}}" alt="" ng-show="techShow2" ng-click="techClick2()">
 	</div>
 	<!-- <div class="two">
 		<img ng-src="{{result.imageUrl}}" alt="">

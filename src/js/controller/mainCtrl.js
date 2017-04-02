@@ -25,7 +25,7 @@ angular.module('app').controller('mainCtrl', ['$scope','$http','$cookies','$root
 	});
 
 	// 获取注册name
-	$scope.userName=$cookies.getObject('register').phone;
+	$scope.userName='老铁';
 
 
 

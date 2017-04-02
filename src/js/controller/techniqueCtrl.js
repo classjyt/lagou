@@ -2,6 +2,11 @@
 
 // 后端交互  ajax 请求
 angular.module('app').controller('techniqueCtrl', ['$scope', '$http', '$state', '$rootScope', function($scope, $http, $state, $rootScope) {
+
+	$scope.star1Img=$rootScope.star1Image;
+	$scope.star2Img=$rootScope.star2Image;
+
+
 	$http({
 		method: 'get',
 		url: 'data/position.json?id=' + $state.params.id,

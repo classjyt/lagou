@@ -13,4 +13,8 @@ angular.module('app').run(['$rootScope', function($rootScope){
     $rootScope.state=0;
     // 返回判断（职位1or搜索2个人3）
     $rootScope.back=1;
+
+    $rootScope.headImage='../images/head.JPG';
+    $rootScope.star1Image='../images/star.png';
+    $rootScope.star2Image='../images/star-active.png';
  }]);

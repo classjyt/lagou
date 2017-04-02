@@ -13,6 +13,10 @@ angular.module('app').run(['$rootScope', function($rootScope){
     $rootScope.state=0;
     // 返回判断（职位1or搜索2个人3）
     $rootScope.back=1;
+
+    $rootScope.headImage='images/head.JPG';
+    $rootScope.star1Image='images/star.png';
+    $rootScope.star2Image='images/star-active.png';
  }]);
 'use strict';
 
@@ -78,6 +82,8 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function($st
 // 后端交互  ajax 请求
 angular.module('app').controller('collectCtrl', ['$scope', '$http', '$state', '$rootScope', function($scope, $http, $state, $rootScope) {
 
+	$scope.star1Img=$rootScope.star1Image;
+	$scope.star2Img=$rootScope.star2Image;	
 
 	$rootScope.back = 4;
 
@@ -172,7 +178,7 @@ angular.module('app').controller('mainCtrl', ['$scope','$http','$cookies','$root
 	});
 
 	// 获取注册name
-	$scope.userName=$cookies.getObject('register').phone;
+	$scope.userName='老铁';
 
 
 
@@ -204,6 +210,8 @@ angular.module('app').controller('mainCtrl', ['$scope','$http','$cookies','$root
 
 // 后端交互  ajax 请求
 angular.module('app').controller('myCtrl', ['$scope','$http','$rootScope','$state', function($scope,$http,$rootScope,$state){
+
+	$scope.headImg=$rootScope.headImage;
 	$http({
 		method:'get',
 		url:'data/positionList.json',
@@ -515,6 +523,11 @@ angular.module('app').controller('searchCtrl', ['$scope', '$http', '$rootScope',
 
 // 后端交互  ajax 请求
 angular.module('app').controller('techniqueCtrl', ['$scope', '$http', '$state', '$rootScope', function($scope, $http, $state, $rootScope) {
+
+	$scope.star1Img=$rootScope.star1Image;
+	$scope.star2Img=$rootScope.star2Image;
+
+
 	$http({
 		method: 'get',
 		url: 'data/position.json?id=' + $state.params.id,

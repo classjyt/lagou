@@ -3,6 +3,8 @@
 // 后端交互  ajax 请求
 angular.module('app').controller('collectCtrl', ['$scope', '$http', '$state', '$rootScope', function($scope, $http, $state, $rootScope) {
 
+	$scope.star1Img=$rootScope.star1Image;
+	$scope.star2Img=$rootScope.star2Image;	
 
 	$rootScope.back = 4;
 
