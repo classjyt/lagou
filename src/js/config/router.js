@@ -43,16 +43,6 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function($st
 		url:'/regist',
 		templateUrl:'view/regist.html',
 		controller:'registCtrl'
-	})
-	.state('vote',{
-		url:'/vote',
-		templateUrl:'view/vote.html',
-		controller:'voteCtrl'
-	})
-	.state('collect',{
-		url:'/collect',
-		templateUrl:'view/collect.html',
-		controller:'collectCtrl'
 	})	
 	;
 	$urlRouterProvider.otherwise('main');	

@@ -14,7 +14,7 @@ angular.module('app').run(['$rootScope', function($rootScope){
     // 返回判断（职位1or搜索2个人3）
     $rootScope.back=1;
 
-    $rootScope.headImage='../images/head.JPG';
+    $rootScope.headImage='../images/head1.jpg';
     $rootScope.star1Image='../images/star.png';
     $rootScope.star2Image='../images/star-active.png';
  }]);
